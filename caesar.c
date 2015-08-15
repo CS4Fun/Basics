@@ -22,7 +22,7 @@ int main(int argc, char* argv[])
 {
     char c;
     int k;
-    char* message = malloc(MSG_BLOCK_SIZE);
+    char* message = malloc(MSG_BLOCK_SIZE*sizeof(char));
     int size = MSG_BLOCK_SIZE;
     int n = 0;
     
@@ -44,7 +44,7 @@ int main(int argc, char* argv[])
         if (n >= size)
         {
             
-            char* temp = realloc(message, size + MSG_BLOCK_SIZE);
+            char* temp = realloc(message, (size + MSG_BLOCK_SIZE)*sizeof(char));
             if (temp != NULL)
             {
                 message = temp;
