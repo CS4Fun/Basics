@@ -136,10 +136,10 @@ int main(void)
     int tile_to_move;
     char command[5];
 
-    cout << "Welcome to play the puzzle game." << endl;
+    cout << "\nWelcome to play the puzzle game.\n\n";
     cout << "Game commands:" << endl;
     cout << "\t- exit: exits the application." << endl;
-    cout << "\t- god: solves the puzzle." << endl;
+    cout << "\t- solve: solves the puzzle.\n\n";
 
     do
     {
@@ -160,7 +160,7 @@ int main(void)
         {
             return 0;
         }
-        else if (strcmp(command, "god") == 0)
+        else if (strcmp(command, "solve") == 0)
         {
             //TODO
         }
